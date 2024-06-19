@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:root{
+    --ben:black;
+    --yolo:yellow;
+    --food:aqua;
+    --son:white;
+
+}
+
+.main{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    padding: 10px;
+    background-color: #00d0ff;
+    
+}
+span{
+    color: var(--son);
+}
+
+
+.logo{
+    margin-left: 34px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--ben);
+}
+
+.navbar a{
+    margin-right: 34px;
+    text-transform: capitalize;
+    color: var(--ben);
+    position: relative;
+}
+
+.navbar a::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background-color: rgb(8, 9, 9);
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+}
+
+.navbar a:hover::after{
+    width: 100%;
+}
+
+
+.info{
+    min-height: 100vh;
+    background: url(iphone.jpg);
+    background-size: cover;
+}
+
+.container{
+   color: var(--son);
+   width: 100%;
+   position: absolute;
+   top: 50%;
+   text-align: center;
+   transform: translatey(-50%);
+   overflow-x: hidden;
+}
+
+.container h3{
+    font-size: 16px;
+    color: var(--ben);
+}
+.container h4{
+    font-size: 50px;
+}
+.container p{
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.btn{
+    width: 150px;
+    height: 40px;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+
+.about{
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
